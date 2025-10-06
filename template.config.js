@@ -41,7 +41,7 @@ export default {
 		}
 	},
 	styles: {
-		tailwindcss: false,
+		tailwindcss: true,
 		pxtorem: true,
 		critical: false,
 		codesplit: true,
