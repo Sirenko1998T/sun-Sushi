@@ -1,0 +1,37 @@
+[
+   "Summer Menu",
+   "Sushi Boxes",
+   {
+      "Sushi and Rolls": [
+         "Signature Rolls",
+         "Nigiri",
+         "California Rolls",
+         "Maki",
+         "Sashimi",
+         "Tartar",
+         "Sauces and Add-ons"
+      ]
+   },
+   {
+      "Main Dishes": [
+         "Soup",
+         "Salad",
+         "Noodles",
+         "Hot Dish",
+         "Side Salad",
+         "Side Dish"
+      ]
+   },
+   "Moon Bistro",
+   "Desserts",
+   {
+      "Drinks": [
+         "Water",
+         "Soda",
+         "Juice",
+         "Fresh Juice",
+         "Beer",
+         "Wine"
+      ]
+   }
+]
