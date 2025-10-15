@@ -1,0 +1,40 @@
+[
+   {
+      "category": "starters",
+      "name": "Moon Bistro Edamame",
+      "description": "Boiled soybeans with sea salt.",
+      "price": "545",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/starters1.webp?alt=media&token=22febb9e-90c2-47a6-b298-43a92bbfac04"
+   },
+   {
+      "category": "starters",
+      "name": "Warm Beef Spring Rolls",
+      "description": "Handmade spring rolls wrapped in traditional soy paper.",
+      "price": "795",
+      "count": "3 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/starters2.webp?alt=media&token=f708f6b2-33d2-4375-8ce3-a8cfb0e136ab"
+   },
+   {
+      "category": "starters",
+      "name": "Warm Vegetarian Spring Rolls",
+      "description": "Handmade spring rolls wrapped in traditional soy paper.",
+      "price": "695",
+      "count": "3 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/starters3.webp?alt=media&token=e07083f1-8e7b-44e2-9145-bfbf31ee74d1"
+   },
+   {
+      "category": "starters",
+      "name": "Dashi Chicken Cornet",
+      "description": "Homemade chicken, breaded in panko and tempura mix, served with two sauces.",
+      "price": "695",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/starters4.webp?alt=media&token=9ec52863-b4a4-401b-b595-6a2720463cce"
+   },
+   {
+      "category": "starters",
+      "name": "Gyoza with Beef",
+      "description": "Traditional Japanese dumplings, steamed and pan-fried in oil.",
+      "price": "895",
+      "count": "8 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/starters5.webp?alt=media&token=36fa7e52-013e-4458-970c-f2584b0ef03a"
+   }
+]

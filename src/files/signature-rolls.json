@@ -1,0 +1,48 @@
+[
+   {
+      "category": "signatureRolls",
+      "name": "Spring Truffle Roll",
+      "description": "Shrimps, hazelnuts, truffles, with green salad in rice paper.",
+      "price": "995",
+      "count": "6 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/signatureRolls1.webp?alt=media&token=bfdf5ca6-ace7-45dc-b18f-f01d026a5b2d"
+   },
+   {
+      "category": "signatureRolls",
+      "name": "Paradise Roll",
+      "description": "Salmon and Ebi shrimp, avocado, cream cheese, green onion, samurai sauce and eel sauce.",
+      "price": "1,345",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/signatureRolls2.webp?alt=media&token=a3c6a2f7-0ae0-4769-bd4c-9ae4c9465689"
+   },
+   {
+      "category": "signatureRolls",
+      "name": "Rainbow Roll",
+      "description": "Salmon, tuna and eel, avocado, cream cheese, eel sauce and almond flakes.",
+      "price": "1,395",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/signatureRolls3.webp?alt=media&token=dc68bbc4-27ca-4ddc-bfbd-383b8c93cce3"
+   },
+   {
+      "category": "signatureRolls",
+      "name": "Sumi Roll",
+      "description": "Crab salad and red tobiko, cream cheese and chives, cucumber, tempura flakes.",
+      "price": "1,395",
+      "count": "8 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/signatureRolls4.webp?alt=media&token=da2020f0-61fe-4c92-9caf-ad11d43bc542"
+   },
+   {
+      "category": "signatureRolls",
+      "name": "Super Spicy Roll",
+      "description": "Spicy tuna, cucumber, red tobiko, crushed nachos, samurai sauce.",
+      "price": "1,195",
+      "count": "8 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/signatureRolls5.webp?alt=media&token=6776ee68-51b9-4294-bd1d-f066367838a3"
+   },
+   {
+      "category": "signatureRolls",
+      "name": "Tempura Futomaki Roll",
+      "description": "Salmon and tuna, avocado, tempura fried, with samurai sauce, eel sauce and crispy onions.",
+      "price": "1,695",
+      "count": "10 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/signatureRolls6.webp?alt=media&token=b8bbd2ce-96f0-440f-b906-f39d61a29152"
+   }
+]

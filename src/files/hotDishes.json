@@ -1,0 +1,59 @@
+[
+   {
+      "category": "hotDishes",
+      "name": "Donburi Chicken",
+      "description": "Chicken with mushrooms and onion mix in golden curry sauce, served on Japanese rice.",
+      "price": "1,195",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/hotDishes1.webp?alt=media&token=8304c8ec-141e-45dd-a7ad-ca562a6b7bf9"
+   },
+   {
+      "category": "hotDishes",
+      "name": "Yakitori Mix of Fish and Seafood Skewers",
+      "description": "Shrimps, salmon, sea bass, and squid on Japanese skewers, served with Japanese rice, pickled vegetables, homemade yakitori sauce, and sansho pepper.",
+      "price": "1,995",
+      "count": "4 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/hotDishes2.webp?alt=media&token=479e1612-d68c-40e2-8db7-001bba7927d2"
+   },
+   {
+      "category": "hotDishes",
+      "name": "Teriyaki Beef Steak",
+      "description": "Served with sautéed vegetables, Japanese rice, and homemade teriyaki sauce.",
+      "price": "—",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/hotDishes3.webp?alt=media&token=a0da1738-4d22-4177-ba7f-49533d0fd7d3",
+      "modifiers": [
+         {
+            "name": "SOS for teriyaki",
+            "details": "min 0 max 1"
+         },
+         {
+            "name": "Teriyaki sauce",
+            "price": "+ 0"
+         },
+         {
+            "name": "Yakitori sauce",
+            "price": "+ 0"
+         }
+      ]
+   },
+   {
+      "category": "hotDishes",
+      "name": "Teriyaki Salmon Steak",
+      "description": "Served with sautéed vegetables, Japanese rice, and homemade teriyaki sauce.",
+      "price": "—",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/hotDishes4.webp?alt=media&token=4a7c0485-5d44-4594-b74a-03ba8bfcce3e",
+      "modifiers": [
+         {
+            "name": "SOS for teriyaki",
+            "details": "min 0 max 1"
+         },
+         {
+            "name": "Teriyaki sauce",
+            "price": "+ 0"
+         },
+         {
+            "name": "Yakitori sauce",
+            "price": "+ 0"
+         }
+      ]
+   }
+]

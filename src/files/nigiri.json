@@ -1,0 +1,30 @@
+[
+   {
+      "category": "nigiri",
+      "name": "Ebi Shrimp Nigiri",
+      "price": "230",
+      "count": "1 pc",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/nigiri1.webp?alt=media&token=1104f631-369f-4164-95aa-ae94bd858824"
+   },
+   {
+      "category": "nigiri",
+      "name": "Smoked Salmon Nigiri",
+      "price": "210",
+      "count": "1 pc",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/nigiri2.webp?alt=media&token=7d2c2790-0b58-477e-8022-b23a2a52603c"
+   },
+   {
+      "category": "nigiri",
+      "name": "Salmon Nigiri",
+      "price": "190",
+      "count": "1 pc",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/nigiri3.webp?alt=media&token=e3946a67-add8-45d9-ba8a-5a5f0c3e2a43"
+   },
+   {
+      "category": "nigiri",
+      "name": "Spicy Salmon Nigiri",
+      "price": "210",
+      "count": "1 pc",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/nigiri4.webp?alt=media&token=858d1383-57f8-4424-a2b1-ac35c8d5bcd3"
+   }
+]

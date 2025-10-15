@@ -1,0 +1,16 @@
+[
+   {
+      "category": "tartar",
+      "name": "Salmon Tartar",
+      "description": "Fresh and smoked salmon, ginger caviar, lemon zest, served with homemade rice chips.",
+      "price": "1695",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/tartar1.webp?alt=media&token=cc9cf2b9-b6b6-4197-8470-d3a5b8deced7"
+   },
+   {
+      "category": "tartar",
+      "name": "Tuna Tartar",
+      "description": "Spicy marinated tuna, ginger caviar, lemon zest, served with homemade rice chips.",
+      "price": "1695",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/tartar2.webp?alt=media&token=30537d0b-4ec7-4f03-91c9-8d0bb56b8d24"
+   }
+]

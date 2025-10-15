@@ -1,0 +1,23 @@
+[
+   {
+      "category": "softDrinks",
+      "name": "Pepsi",
+      "price": "295",
+      "count": "330 ml",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/softDrinks1.webp?alt=media&token=7a24c7a1-7e99-400f-beb1-2d3f51090cbb"
+   },
+   {
+      "category": "softDrinks",
+      "name": "Pepsi Zero",
+      "price": "295",
+      "count": "330 ml",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/softDrinks2.webp?alt=media&token=1e40b843-330f-4551-bbf7-3332bdd59e4d"
+   },
+   {
+      "category": "softDrinks",
+      "name": "Mirinda",
+      "price": "295",
+      "count": "330 ml",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/softDrinks3.webp?alt=media&token=4a109a46-2e12-41b7-981c-04c87e620344"
+   }
+]

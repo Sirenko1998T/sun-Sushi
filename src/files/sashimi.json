@@ -1,0 +1,31 @@
+[
+   {
+      "category": "sashimi",
+      "name": "Royal Mix Sashimi",
+      "description": "Salmon, tuna, eel, shrimp, and sea bass.",
+      "price": "1,995",
+      "count": "16 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sashimi1.webp?alt=media&token=6c848143-c37e-456f-a09b-8602d5fa0971"
+   },
+   {
+      "category": "sashimi",
+      "name": "Salmon Sashimi",
+      "price": "1,495",
+      "count": "8 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sashimi2.webp?alt=media&token=c11311bb-8639-4e45-b7cb-53124900e302"
+   },
+   {
+      "category": "sashimi",
+      "name": "Tuna Sashimi",
+      "price": "1,495",
+      "count": "8 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sashimi3.webp?alt=media&token=97cd561e-a666-468a-a926-5a5168af6825"
+   },
+   {
+      "category": "sashimi",
+      "name": "Salmon & Tuna Mix Sashimi",
+      "price": "1,495",
+      "count": "8 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sashimi4.webp?alt=media&token=62276fe6-b567-4877-9935-e46aaa1d3b99"
+   }
+]

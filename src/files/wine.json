@@ -1,0 +1,26 @@
+[
+   {
+      "category": "wine",
+      "name": "Borgoluce Prosecco Lampo Brut DOC",
+      "description": "Prosecco",
+      "price": "3,395",
+      "count": "750 ml",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/wine1.webp?alt=media&token=ef1501d0-3790-42bd-ac4e-dd88d63b6a81"
+   },
+   {
+      "category": "wine",
+      "name": "Ruinart Champagne Brut",
+      "description": "Champagne",
+      "price": "16,995",
+      "count": "750 ml",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/wine2.webp?alt=media&token=91e02b17-515d-4507-9f04-57f23bbf80d6"
+   },
+   {
+      "category": "wine",
+      "name": "Doja Chardonnay Pinot Grigio",
+      "description": "White wine – Serbia, Pinot Grigio",
+      "price": "2,995",
+      "count": "750 ml",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/wine3.webp?alt=media&token=fa84b730-823f-4adb-b754-c63c09dbe186"
+   }
+]

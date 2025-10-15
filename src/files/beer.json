@@ -1,0 +1,10 @@
+[
+   {
+      "category": "beer",
+      "name": "Birra Moretti",
+      "description": "Beer",
+      "price": "495",
+      "count": "330 ml",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/beer1.webp?alt=media&token=92d82115-d2ad-4007-8a28-0b235e762325"
+   }
+]

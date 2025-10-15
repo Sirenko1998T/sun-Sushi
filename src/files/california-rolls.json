@@ -1,0 +1,42 @@
+[
+   {
+      "category": "californiaRolls",
+      "name": "California Feelgood",
+      "description": "Salmon, avocado, sea bass, tuna and red tobiko caviar.",
+      "price": "995",
+      "count": "8 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/californiaRolls1.webp?alt=media&token=518510a5-ab02-411e-91c8-0b8284d43137"
+   },
+   {
+      "category": "californiaRolls",
+      "name": "Crispy Vegetable California",
+      "description": "Marinated red cabbage, avocado, lettuce, noodles, tempura flakes and beet chips.",
+      "price": "895",
+      "count": "8 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/californiaRolls2.webp?alt=media&token=bd8d4a48-0a2d-4ac1-84ac-ffe335530142"
+   },
+   {
+      "category": "californiaRolls",
+      "name": "Ebi Tempura California",
+      "description": "Tempura king shrimp, sesame seasoning, cucumber, lemon zest and sesame.",
+      "price": "995",
+      "count": "8 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/californiaRolls3.webp?alt=media&token=bdecc1f1-171f-4ccf-ab26-a7e7e4ac28ec"
+   },
+   {
+      "category": "californiaRolls",
+      "name": "Crispy Tuna California",
+      "description": "Tuna with black pepper, radish and tempura flakes.",
+      "price": "995",
+      "count": "8 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/californiaRolls4.webp?alt=media&token=54fcef40-6dc2-4969-a825-36f2f6a23941"
+   },
+   {
+      "category": "californiaRolls",
+      "name": "Crispy Salmon California",
+      "description": "Salmon, crispy onions, Japanese mayonnaise.",
+      "price": "995",
+      "count": "8 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/californiaRolls5.webp?alt=media&token=e8765927-7fed-409d-afa2-7567f62774a6"
+   }
+]

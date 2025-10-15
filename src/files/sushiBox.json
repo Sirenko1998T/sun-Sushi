@@ -1,0 +1,74 @@
+[
+   {
+      "category": "sushiBoxes",
+      "name": "MOON Box",
+      "description": "Volcano Roll, maki with spicy tuna, truffle roll, Feelgood Roll, Philadelphia Roll, 4 shrimp nigiri, 4 tuna nigiri, 4 salmon nigiri.",
+      "price": "6395",
+      "count": "48 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sushiBoxes1.webp?alt=media&token=5cb45a55-b0f7-4ef5-90ee-37b27081c5e0"
+   },
+   {
+      "category": "sushiBoxes",
+      "name": "Crazy Roll Box",
+      "description": "Crispy crab roll, miso maki with sea bass, Dragon Roll, California Roll with tuna and avocado.",
+      "price": "3495",
+      "count": "30 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sushiBoxes2.webp?alt=media&token=8cb988ad-a0dd-4192-acb5-f99391508d72"
+   },
+   {
+      "category": "sushiBoxes",
+      "name": "Crispy Box",
+      "description": "California crispy salmon, California crispy tuna, California crispy shrimp, Volcano Roll.",
+      "price": "3595",
+      "count": "32 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sushiBoxes3.webp?alt=media&token=f4c4ba6c-0fd9-4a5a-84e6-826835d8c92a"
+   },
+   {
+      "category": "sushiBoxes",
+      "name": "Duo Delice Box",
+      "description": "Truffle roll, maki with spicy tuna, Volcano Roll, 2 salmon nigiri, 2 tuna nigiri, 2 shrimp nigiri.",
+      "price": "3395",
+      "count": "26 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sushiBoxes4.webp?alt=media&token=7cf80473-46fe-4dc7-abfb-64868bd7c55b"
+   },
+   {
+      "category": "sushiBoxes",
+      "name": "Shrimp Box",
+      "description": "Spring rolls with shrimp, hazelnut and truffle, California Ebi Tempura, 4 shrimp nigiri.",
+      "price": "2595",
+      "count": "18 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sushiBoxes5.webp?alt=media&token=03226d3d-083d-4948-8b84-ec542c1bbee5"
+   },
+   {
+      "category": "sushiBoxes",
+      "name": "Sushi Explorer Box",
+      "description": "Philadelphia Roll, Ebi Tempura Roll, smoked salmon maki with cream cheese, 2 salmon nigiri, 2 shrimp nigiri.",
+      "price": "3295",
+      "count": "26 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sushiBoxes6.webp?alt=media&token=9e15cfbd-0e2b-4cfb-9bbd-e4de19b94886"
+   },
+   {
+      "category": "sushiBoxes",
+      "name": "Tuna Box",
+      "description": "California roll with tuna and avocado, 6 tuna nigiri, 2 tuna sashimi.",
+      "price": "2595",
+      "count": "16 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sushiBoxes77.webp?alt=media&token=55e2d972-4db5-4de6-8648-e4e4b4ba2a48"
+   },
+   {
+      "category": "sushiBoxes",
+      "name": "Salmon Box",
+      "description": "California roll with salmon and avocado, 6 salmon nigiri, 2 salmon sashimi.",
+      "price": "2595",
+      "count": "16 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sushiBoxes8.webp?alt=media&token=b0bf0ae1-e8f9-4724-9332-8ecbc11de937"
+   },
+   {
+      "category": "sushiBoxes",
+      "name": "Mix Sushi Box",
+      "description": "Classic California, 1 salmon nigiri, 1 tuna nigiri, 1 shrimp nigiri, 1 eel nigiri.",
+      "price": "1895",
+      "count": "12 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sushiBoxes9.webp?alt=media&token=4eed103d-7e40-43bd-9989-34d10cd2de4d"
+   }
+]

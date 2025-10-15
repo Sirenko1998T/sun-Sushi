@@ -1,0 +1,23 @@
+[
+   {
+      "category": "soup",
+      "name": "Salmon Cream Soup",
+      "description": "Wasabi, leek, edamame, and sansho pepper.",
+      "price": "595",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/soup1.webp?alt=media&token=b55786e6-5acd-4b58-883e-755c8b25b3fa"
+   },
+   {
+      "category": "soup",
+      "name": "Green Velvet Curry Soup",
+      "description": "Edamame and green beans soup with coconut milk, served with croutons and herbs.",
+      "price": "595",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/soup2.webp?alt=media&token=06b36494-b9b0-4abe-a7d1-ac8c7c174aac"
+   },
+   {
+      "category": "soup",
+      "name": "Miso Soup",
+      "description": "Tofu, green onion, bamboo, and wakame.",
+      "price": "495",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/soup3.webp?alt=media&token=c903d436-ffd2-4d8b-b070-decc8a8200a2"
+   }
+]

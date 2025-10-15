@@ -1,0 +1,16 @@
+[
+   {
+      "category": "water",
+      "name": "Aqua Viva Water",
+      "price": "295",
+      "count": "250 ml",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/water1.webp?alt=media&token=539a3acd-c66e-4bd4-8800-1c09ab93ee9e"
+   },
+   {
+      "category": "water",
+      "name": "Knjaz Milos Mineral Water",
+      "price": "295",
+      "count": "250 ml",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/water2.webp?alt=media&token=68e4498d-dfb6-470f-9f89-d828ef552930"
+   }
+]

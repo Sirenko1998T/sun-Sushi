@@ -1,0 +1,89 @@
+[
+   {
+      "category": "salad",
+      "name": "Buddha Bowl - Grilled Beef Tenderloin",
+      "description": "Rice, avocado, cabbage, noodles, tomatoes, cucumber, seasonal greens, radish, fried soy balls, beet chips, popped amaranth.",
+      "price": "1,595",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/salad1.webp?alt=media&token=de061bbf-45ae-46ab-bd68-5b85824179c4",
+      "modifiers": [
+         {
+            "name": "SOS for Buddha",
+            "details": "min 0 max 1"
+         },
+         {
+            "name": "PESTO SOS modifikator",
+            "price": "0"
+         },
+         {
+            "name": "MISO SOS modifikator",
+            "price": "0"
+         },
+         {
+            "name": "SAMURAJ SOS modifikator",
+            "price": "0"
+         },
+         {
+            "name": "SUSAM SOS modifikator",
+            "price": "0"
+         }
+      ]
+   },
+   {
+      "category": "salad",
+      "name": "Buddha Bowl - Tuna Tataki",
+      "description": "Rice, avocado, cabbage, noodles, tomatoes, cucumber, seasonal green mix, radish, fried soy balls, beet chips, popped amaranth.",
+      "price": "1,495",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/salad2.webp?alt=media&token=97c61b64-4523-4553-a44e-43499b1dea1e",
+      "modifiers": [
+         {
+            "name": "SOS for Buddha",
+            "details": "min 0 max 1"
+         },
+         {
+            "name": "PESTO SOS modifikator",
+            "price": "0"
+         },
+         {
+            "name": "MISO SOS modifikator",
+            "price": "0"
+         },
+         {
+            "name": "SAMURAJ SOS modifikator",
+            "price": "0"
+         },
+         {
+            "name": "SUSAM SOS modifikator",
+            "price": "0"
+         }
+      ]
+   },
+   {
+      "category": "salad",
+      "name": "Buddha Bowl - Grilled Chicken",
+      "description": "Rice, avocado, cabbage, noodles, tomatoes, cucumber, seasonal green mix, radish, fried soy balls, beet chips, popped amaranth.",
+      "price": "1,195",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/salad3.webp?alt=media&token=d90cd95d-9379-4d7a-8f0b-87704561c207",
+      "modifiers": [
+         {
+            "name": "SOS for Buddha",
+            "details": "min 0 max 1"
+         },
+         {
+            "name": "PESTO SOS modifikator",
+            "price": "0"
+         },
+         {
+            "name": "MISO SOS modifikator",
+            "price": "0"
+         },
+         {
+            "name": "SAMURAJ SOS modifikator",
+            "price": "0"
+         },
+         {
+            "name": "SUSAM SOS modifikator",
+            "price": "0"
+         }
+      ]
+   }
+]

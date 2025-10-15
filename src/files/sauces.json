@@ -1,0 +1,20 @@
+[
+   {
+      "category": "sauces",
+      "name": "Spicy Ginger",
+      "price": "100",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sauces1.webp?alt=media&token=ee4b9380-f323-40c7-9784-dcad1221c580"
+   },
+   {
+      "category": "sauces",
+      "name": "Teriyaki Sauce",
+      "price": "100",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sauces2.webp?alt=media&token=bfe8d1ea-b9d0-4eed-974f-fcb67e934161"
+   },
+   {
+      "category": "sauces",
+      "name": "Samurai Sauce",
+      "price": "100",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/sauces3.webp?alt=media&token=45afb821-7749-48d2-ae12-f7f1fbb2eed5"
+   }
+]

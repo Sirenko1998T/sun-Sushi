@@ -1,0 +1,30 @@
+[
+   {
+      "category": "summerMenu",
+      "name": "Sea Bass Salad",
+      "description": "Grilled sea bass fillet served with a mix of green salads, cucumber, tomatoes, pumpkin seeds, and pistachios, topped with a citrus-basil dressing.",
+      "price": "1645",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/summerMenu1.webp?alt=media&token=575cd29a-55ec-4c95-b934-c11305f6f9c3"
+   },
+   {
+      "category": "summerMenu",
+      "name": "Salmon and Quinoa Salad",
+      "description": "Salmon marinated in beet juice, served with a mix of green salads, avocado, edamame, and a honey-Dijon mustard dressing.",
+      "price": "1645",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/summerMenu2.webp?alt=media&token=177dba3d-8700-4c20-8a3f-40786bd0be88"
+   },
+   {
+      "category": "summerMenu",
+      "name": "Cucumber Gazpacho",
+      "description": "Chilled cucumber soup with vegetable salsa.",
+      "price": "495",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/summerMenu3.webp?alt=media&token=fe0dd669-4671-4a0c-afd1-126a2fd1dc92"
+   },
+   {
+      "category": "summerMenu",
+      "name": "Cheese and Watermelon Salad",
+      "description": "Light salad with a mix of green salads, red onion, and refreshing citrus yuzu dressing.",
+      "price": "795",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/summerMenu4.webp?alt=media&token=e2775a25-8c57-445c-b057-d4713d068063"
+   }
+]

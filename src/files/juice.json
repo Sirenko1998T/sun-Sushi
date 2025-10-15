@@ -1,0 +1,26 @@
+[
+   {
+      "category": "juice",
+      "name": "Pineapple Juice Gusto",
+      "description": "",
+      "price": "345",
+      "count": "200 ml",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/juice1.webp?alt=media&token=1f82bad2-0788-414e-a7a6-79b684b91a1a"
+   },
+   {
+      "category": "juice",
+      "name": "Blueberry Juice Gusto",
+      "description": "",
+      "price": "345",
+      "count": "200 ml",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/juice2.webp?alt=media&token=cfa1ccaf-44ff-417f-a57b-8f1925b8fa93"
+   },
+   {
+      "category": "juice",
+      "name": "Apple Juice Gusto",
+      "description": "",
+      "price": "345",
+      "count": "200 ml",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/juice3.webp?alt=media&token=71122886-ed75-4ca5-8de1-5df80c071503"
+   }
+]

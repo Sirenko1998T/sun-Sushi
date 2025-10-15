@@ -1,0 +1,37 @@
+[
+   {
+      "category": "desserts",
+      "name": "Chocolate Mousse",
+      "description": "Double chocolate mousse made from premium milk and white chocolate, topped with homemade crumbs.",
+      "price": "695",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/desserts1.webp?alt=media&token=e294475c-e315-4ce3-89c3-5d76f430bc3c"
+   },
+   {
+      "category": "desserts",
+      "name": "Lemon Tart",
+      "description": "Exquisite lemon-basil cream in a homemade crust, with meringue cream and lemon gel.",
+      "price": "695",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/desserts1.webp?alt=media&token=e294475c-e315-4ce3-89c3-5d76f430bc3c"
+   },
+   {
+      "category": "desserts",
+      "name": "Carrot Cake",
+      "description": "Phenomenally tender cake with white chocolate, cocoa butter, and nuts.",
+      "price": "695",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/desserts3.webp?alt=media&token=9feb81e8-6765-4f46-a6b1-66532d8ad006"
+   },
+   {
+      "category": "desserts",
+      "name": "Coconut Cake",
+      "description": "Creamy coconut cake with forest fruit filling, topped with quality white chocolate.",
+      "price": "695",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/desserts4.webp?alt=media&token=1d6a28b0-14e4-42b8-b154-5cf8573d4131"
+   },
+   {
+      "category": "desserts",
+      "name": "Passion Fruit and Mango Cake",
+      "description": "White chocolate mousse on a crispy base, filled with passion fruit and mango puree.",
+      "price": "695",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/desserts5.webp?alt=media&token=f2b0011b-49fc-4f8a-a104-1f7d78777980"
+   }
+]

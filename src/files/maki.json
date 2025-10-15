@@ -1,0 +1,42 @@
+[
+   {
+      "category": "maki",
+      "name": "Spicy Eel Maki",
+      "description": "Eel, cucumber and spicy mix.",
+      "price": "895",
+      "count": "6 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/maki1.webp?alt=media&token=d76d87ea-f662-49ca-a542-14f1a68154d0"
+   },
+   {
+      "category": "maki",
+      "name": "Vegetable Maki",
+      "description": "Tomato concasse, sunflower seeds and homemade vegan pesto.",
+      "price": "595",
+      "count": "6 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/maki2.webp?alt=media&token=e5616aaf-c3a2-4203-8767-f24a76cd6ac8"
+   },
+   {
+      "category": "maki",
+      "name": "Cheese & Cucumber Maki",
+      "description": "Cucumber and Philadelphia cheese.",
+      "price": "595",
+      "count": "6 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/maki3.webp?alt=media&token=a5b9a10f-b608-497c-a3bc-14f00ba13f05"
+   },
+   {
+      "category": "maki",
+      "name": "Cream Cheese Maki",
+      "description": "Cream cheese and chives.",
+      "price": "595",
+      "count": "6 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/maki4.webp?alt=media&token=5177be0d-307c-4a85-b27a-2c764022a088"
+   },
+   {
+      "category": "maki",
+      "name": "Smoked Salmon Cream Cheese Maki",
+      "description": "Smoked salmon and cream cheese.",
+      "price": "895",
+      "count": "6 pcs",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sun-project-df7ef.firebasestorage.app/o/maki5.webp?alt=media&token=45438d8e-75ef-477d-bc8a-679a60f9f99e"
+   }
+]
