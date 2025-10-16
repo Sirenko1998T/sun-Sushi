@@ -90,8 +90,11 @@
     "url": "https://github.com/Sirenko1998T/sun-Sushi/issues"
   },
   "homepage": "https://github.com/Sirenko1998T/sun-Sushi#readme",
-  "description": "",
   "dependencies": {
+    "firebase": "^12.4.0",
+    "firebase-admin": "^13.5.0",
     "react-router-dom": "^7.9.3"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
