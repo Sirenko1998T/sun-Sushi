@@ -1,6 +1,6 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import { db } from "../firebase";
-import { collection, query, where, getDocs, limit, documentId } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 
 export let ProductsContext = createContext();
 
@@ -9,7 +9,7 @@ export function ProductsProvider({ children }) {
    const [loading, setLoading] = useState(true);
 
 
-   const fetchProducts = async () => {
+   const fetchAllProducts = async () => {
       setLoading(true);
       try {
          const productsCollection = collection(db, "products");
@@ -27,8 +27,18 @@ export function ProductsProvider({ children }) {
    };
 
 
+   useEffect(() => {
+      fetchAllProducts();
+   }, []);
+
+
    return (
-      <ProductsContext.Provider value={{ products, loading, fetchProducts }}>
+      <ProductsContext.Provider value={{
+         products,
+         loading,
+
+
+      }}>
          {children}
       </ProductsContext.Provider>
    );

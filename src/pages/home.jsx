@@ -1,7 +1,7 @@
 import react, { useContext, useEffect } from "react"
 import Header from "../components/header";
 import Slider from "../components/slider";
-import { ProductsContext } from "../context/productContext";
+
 import sliderImg1 from '../assets/img/sliider/hero_02_eng_srb.webp';
 import sliderImg2 from '../assets/img/sliider/unnamed.png';
 import sliderImg3 from '../assets/img/sliider/unnamed (1).png';
@@ -10,25 +10,29 @@ import rightArrow from '..//assets/svgicons/arrow-right-long.svg'
 let slidersImg = [sliderImg1, sliderImg2, sliderImg3];
 import Aside from "../components/aside";
 import category from '../files/category.json'
+import { ProductsContext } from "../context/productContext";
+import InfoBlack from "../components/info-black";
+import ProductCard from "../components/product-card";
 export default function Home() {
-   let { products, loading, fetchProducts } = useContext(ProductsContext);
+   let { products } = useContext(ProductsContext);
+   let selection1 = ['Moon Bistro Edamame', 'Spicy Eel Maki', 'Spring Truffle Roll', 'Warm Beef Spring Rolls', 'Shrimp Box'];
+   let selection2 = ['Salmon Tartar', 'Green Velvet Curry Soup', 'Crispy Vegetable California', 'Salmon and Quinoa Salad', 'Salmon Nigiri'];
+
+   let select1 = products.filter(product => selection1.includes(product.name));
+   let select2 = products.filter(product => selection2.includes(product.name));
 
 
 
-   useEffect(() => {
-      fetchAllProducts();
-   }, []);
 
-   if (loading) return <div>Loading...</div>;
 
-   return (
-      <div>
-         {products.map(product => (
-            <div key={product.id}>
-               <h3>{product.name}</h3>
-               <p>${product.price}</p>
-            </div>
-         ))}
-      </div>
+
+   return (<>
+
+      <ProductCard products={select1} homePage={true} />
+      <ProductCard products={select2} cardSlider={true} />
+
+   </>
+
+
    );
 }
