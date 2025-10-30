@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 export default function Slider({ slides = [], rightBtn, leftBtn, componentArr = false, imgArr = false }) {
    let [currIndex, setCurrIndex] = useState(0);
-   let rightClick = () => setCurrIndex((prev) => (prev + 1) % img.length)
-   let leftClick = () => setCurrIndex((prev) => (prev - 1 + img.length) % img.length)
+   let rightClick = () => setCurrIndex((prev) => (prev + 1) % slides.length)
+   let leftClick = () => setCurrIndex((prev) => (prev - 1 + slides.length) % slides.length)
    return (
       <>
          <button onClick={leftClick}><img src={leftBtn} alt="arrow" /></button>

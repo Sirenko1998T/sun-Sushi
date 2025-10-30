@@ -10,7 +10,7 @@ export default function Header() {
    return (
       <header className="flex items-center justify-between p-4">
          <Button img={logo} />
-         <Button img={menu} label='Наше меню' />
+         <Button img={menu} label='Our menu' />
          <div className="text-center">
             <h1>SUN</h1>
             <p>Love Food & Funki Sushi</p>
