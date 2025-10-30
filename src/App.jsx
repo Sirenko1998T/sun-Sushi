@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+
 import Main from './pages/main'
 import { ProductsProvider } from './context/productContext'
 import './styles/libs/tailwind.css'

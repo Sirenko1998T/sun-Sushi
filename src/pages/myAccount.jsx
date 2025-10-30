@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../components/button';
 import Input from '../components/input';
 import edit from '../assets/svgicons/edit-black.svg';
-import confirm from '../assets/svgicons/confirm-green.svg   ';
+import confirm from '../assets/svgicons/confirm-green.svg';
 import trash from '../assets/svgicons/trash-black.svg';
 export default function MyAccount() {
    return (<>

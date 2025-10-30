@@ -93,7 +93,7 @@
   "dependencies": {
     "firebase": "^12.4.0",
     "firebase-admin": "^13.5.0",
-    "react-router-dom": "^7.9.3"
+    "react-router-dom": "^7.9.5"
   },
   "keywords": [],
   "description": ""

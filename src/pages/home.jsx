@@ -1,4 +1,5 @@
 import react, { useContext, useEffect } from "react"
+
 import Header from "../components/header";
 import Slider from "../components/slider";
 import svg1 from '../assets/svgicons/hero1.svg';
