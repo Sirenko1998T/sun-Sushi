@@ -1,6 +1,6 @@
 import react, { useContext, useEffect } from "react"
 
-import Header from "../components/header";
+
 import Slider from "../components/slider";
 import svg1 from '../assets/svgicons/hero1.svg';
 import svg2 from '../assets/svgicons//hero2.svg';
@@ -23,17 +23,11 @@ import Aside from "../components/aside";
 import AboutUsBlock from "../components/about-us-block";
 import category from '../files/category.json'
 import { ProductsContext } from "../context/productContext";
-import LocationBlock from "../components/location-block";
+
 import InfoBlock from "../components/info-block";
 import ProductCard from "../components/product-card";
 import Button from "../components/button";
-import logoFooter from '../assets/img//logo.png';
-import insatgramIcon from '../assets/svgicons/insta.svg'
-import tiktok from '../assets/svgicons/tiktok.svg'
-import linkedinIcon from '../assets/svgicons/linkedin.svg'
 
-import tweetIcon from '../assets/svgicons/tweet.svg'
-import send from '../assets/svgicons/paper-plane-white.svg'
 export default function Home() {
    let { products } = useContext(ProductsContext);
    let selection1 = ['Moon Bistro Edamame', 'Spicy Eel Maki', 'Spring Truffle Roll', 'Warm Beef Spring Rolls', 'Shrimp Box'];
@@ -49,7 +43,7 @@ export default function Home() {
 
 
    return (<>
-      <Header />
+
       <Slider slides={slidersImg} rightBtn={leftArrow} leftBtn={rightArrow} componentArr={false} imgArr={true} />
       <div>
          <Button label='Order now' />
@@ -86,36 +80,7 @@ export default function Home() {
          <AboutUsBlock img={aboutImg2} title='Catering' subtitle='Do you want to organize' list={['Gourmet cuisine', 'Customized menus', 'Professional service']} buttonComponent={<Button label='Contact Us' />} hoverSubTitle='Welcome to Sun' hoverTitle='Catering' hoverdesc='We offer personalized service. Every request takes our guests’ wishes into account. From simple dish preparation to full-service catering, each guest chooses their own formula and can rely on the professionalism of the MOON team, who will make their order unforgettable.' />
 
       </section>
-      <footer>
-         <div><img src={logoFooter} alt="logo" /></div>
-         <div>
-            <LocationBlock title='Prague' desc={['10000', 'info@sun-sushi.com ', '+125.11.334.4569']} button={<Button label='reserve a table' />} />
-            <LocationBlock title='Lisbon' desc={['15000', 'info@sun-sushi.com', '+128.11.77.0500']} button={<Button label='reserve a table' />} />
-            <div>
-               <h2>Home</h2>
-               <h2>Menu</h2>
-               <h2>Cooperation</h2>
-               <h2>Join Our Team</h2>
-               <h2>Contacts</h2>
-               <h2>Login / Registration</h2>
 
-            </div>
-            <div>
-               <h2>Follow us:</h2>
-               <div><Button img={tiktok} />
-                  <Button img={linkedinIcon} />
-                  <Button img={insatgramIcon} />
-                  <Button img={tweetIcon} /></div>
-            </div>
-            <input type="text" placeholder="Follow us" /> <Button img={send} />
-         </div>
-         <p>
-            Moon sushi bar ® — 2025 © All rights reserved
-            Designed by Arty © — All rights reserved
-            Moon sushi bar ® —  </p>
-         <Button label='Terms of Use/ ' />
-         <Button label=' Privacy Policy ' />
-      </footer>
    </>
 
 
