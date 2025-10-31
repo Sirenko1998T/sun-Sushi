@@ -12,12 +12,12 @@ import menu from '../assets/svgicons/our-menu.svg';
 export default function Layout() {
    return (<>
       <header className="flex items-center justify-between p-4 sticky top-0 z-50">
-         <Button img={logo} />
+         <Link to='/'>  <Button img={logo} /></Link>
          <Link to='/menu'> <Button img={menu} label='Our menu' /></Link>
-         <div className="text-center">
+         <Link to='/'>    <div className="text-center">
             <h1>SUN</h1>
             <p>Love Food & Funki Sushi</p>
-         </div>
+         </div></Link>
          <Link to='/cart'><Button img={cart} /></Link>
          <Link to='/myAccount'><Button img={user} /></Link>
          <BurgerMenu />

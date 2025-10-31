@@ -19,7 +19,7 @@ import bookOpen from '../assets/svgicons/book-open.svg'
 import restaurants2 from '../assets/img/moon_nbg.webp'
 import aboutImg1 from '../assets/img/aboutus1.jpg'
 import aboutImg2 from '../assets/img/aboutus2.jpg'
-import Aside from "../components/aside";
+
 import AboutUsBlock from "../components/about-us-block";
 import category from '../files/category.json'
 import { ProductsContext } from "../context/productContext";
