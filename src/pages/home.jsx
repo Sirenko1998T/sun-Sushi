@@ -1,5 +1,5 @@
 import react, { useContext, useEffect } from "react"
-
+import { Link, useNavigate } from 'react-router-dom';
 
 import Slider from "../components/slider";
 import svg1 from '../assets/svgicons/hero1.svg';
@@ -29,14 +29,15 @@ import ProductCard from "../components/product-card";
 import Button from "../components/button";
 
 export default function Home() {
-   let { products } = useContext(ProductsContext);
+   const navigate = useNavigate();
+   let { products, loading } = useContext(ProductsContext);
    let selection1 = ['Moon Bistro Edamame', 'Spicy Eel Maki', 'Spring Truffle Roll', 'Warm Beef Spring Rolls', 'Shrimp Box'];
    let selection2 = ['Salmon Tartar', 'Green Velvet Curry Soup', 'Crispy Vegetable California', 'Salmon and Quinoa Salad', 'Salmon Nigiri'];
 
    let select1 = products.filter(product => selection1.includes(product.name));
    let select2 = products.filter(product => selection2.includes(product.name));
-   let selectSlide1 = [<ProductCard products={select1} homePage={true} menuPage={false} detaledView={false} cardSlider={false} />]
-   let selectSlide2 = [<ProductCard products={select2} homePage={false} menuPage={false} detaledView={false} cardSlider={true} />]
+   let selectSlide1 = products.map((i) => (<ProductCard products={select1} homePage={true} menuPage={false} detaledView={false} cardSlider={false} />))
+   let selectSlide2 = products.map((i) => (<ProductCard products={select2} homePage={false} menuPage={false} detaledView={false} cardSlider={true} />))
 
 
 

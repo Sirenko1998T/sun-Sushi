@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import Button from "./button";
 
+import { useNavigate } from 'react-router-dom';
+
+
+
+
 export default function ProductCard({
    products = [],
    homePage = false,
@@ -8,6 +13,7 @@ export default function ProductCard({
    detaledView = false,
    cardSlider = false,
 }) {
+   let navigate = useNavigate();
    return (
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4">
          {products.map((product, index) => {
@@ -19,7 +25,9 @@ export default function ProductCard({
                   className="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300"
                >
                   {homePage && (
-                     <div className="p-4 text-center">
+
+                     <div className="p-4 text-center" onClick={() => navigate(`/menu/${product.id}`)}>
+
                         <img
                            src={product.img}
                            alt={product.name}
@@ -29,11 +37,13 @@ export default function ProductCard({
                         <p className="text-lg font-semibold mt-2">{product.name}</p>
                         <p className="text-gray-600">{product.price} RSD</p>
                         <p className="text-sm text-gray-500">Count: {product.count}</p>
+
                      </div>
+
                   )}
 
                   {cardSlider && (
-                     <div className="p-4 text-center">
+                     <div className="p-4 text-center" onClick={() => navigate(`/menu/${product.id}`)}>
                         <img
                            src={product.img}
                            alt={product.name}

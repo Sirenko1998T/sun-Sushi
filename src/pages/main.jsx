@@ -5,6 +5,7 @@ import Cart from "./cart";
 import Menu from "./menu";
 import Login from "./login";
 import MyAccount from "./myAccount";
+import ProductCard from "../components/product-card";
 import { Routes, Route } from 'react-router-dom';
 export default function Main() {
    return (
@@ -15,8 +16,10 @@ export default function Main() {
 
             <Route index element={<Home />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/menu/:id' element={<Menu />} />
             <Route path='/menu' element={<Menu />} />
             <Route path='/login' element={<Login />} />
+            <Route path='/product' element={<ProductCard />} />
             <Route path='/myAccount' element={<MyAccount />} />
          </Route >
       </Routes >

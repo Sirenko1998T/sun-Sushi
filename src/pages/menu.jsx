@@ -1,13 +1,18 @@
 import react, { useContext, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { ProductsContext } from "../context/productContext";
 import ProductCard from "../components/product-card";
 import category from '../files/category.json';
-import Aside from '../components/aside.jsx'
+import Aside from '../components/aside.jsx';
+
 export default function Menu() {
    let { products } = useContext(ProductsContext);
 
+   const { id } = useParams()
+   const selectedItem = products.find((i) => i.id === id)
+
    return (<>
-      <Aside category={category} />
+
       <section>
          <h2>Summer Menu</h2>
 
@@ -77,7 +82,8 @@ export default function Menu() {
 
          <h2>Wine</h2>
          <ProductCard products={products.filter((i) => i.category == 'wine')} homePage={false} menuPage={true} detaledView={false} cardSlider={false} />
-
+         {selectedItem && (<ProductCard products={[selectedItem]} homePage={false} menuPage={false} detaledView={true} cardSlider={false} />)}
+         <Aside category={category} />
 
       </section>
 
