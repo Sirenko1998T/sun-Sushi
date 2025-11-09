@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Button from "./button";
-
+import Count from './count'
 import { useNavigate } from 'react-router-dom';
 
+import { CartContext } from "../context/cartContext";
 
 
 
@@ -13,11 +14,15 @@ export default function ProductCard({
    detaledView = false,
    cardSlider = false,
 }) {
+   const [count, showCount] = useState([]);
+   const [hovered, setHovered] = useState(null);
    let navigate = useNavigate();
+
+   let { addToCart, cart, quantity, increaseQuantity, reduceQuantity } = useContext(CartContext);
    return (
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4">
          {products.map((product, index) => {
-            const [hovered, setHovered] = useState(false);
+
 
             return (
                <div
@@ -55,10 +60,10 @@ export default function ProductCard({
                   )}
 
                   {menuPage && (
-                     <div className="relative p-4">
+                     <div className="relative p-4" onClick={() => navigate(`/menu/${product.id}`)}>
                         <div
-                           onMouseEnter={() => setHovered(true)}
-                           onMouseLeave={() => setHovered(false)}
+                           onMouseEnter={() => setHovered(product.id)}
+                           onMouseLeave={() => setHovered(null)}
                            className="relative"
                         >
                            <img
@@ -66,7 +71,7 @@ export default function ProductCard({
                               alt={product.name}
                               className="w-full h-56 object-cover rounded-lg"
                            />
-                           {hovered && (
+                           {hovered === product.id && (
                               <div className="absolute inset-0 bg-black bg-opacity-60 text-white flex flex-col justify-center items-center p-4 rounded-lg transition-opacity">
                                  <p className="text-lg font-semibold mb-1">
                                     {product.name}
@@ -74,7 +79,13 @@ export default function ProductCard({
                                  <p className="text-sm mb-3 text-gray-200">
                                     {product.description}
                                  </p>
-                                 <Button label="Add to cart" />
+
+                                 {count.includes(product.id) ? <Count value={quantity[product.id]} reduce={() => reduceQuantity(product.id)} increase={() => increaseQuantity(product.id)} /> : <Button onClick={() => {
+                                    showCount(prev => [...prev, product.id]);
+                                    addToCart(product.id, products);
+
+                                 }} label="Add to cart" />}
+
                               </div>
                            )}
                         </div>
@@ -97,6 +108,7 @@ export default function ProductCard({
                         />
                         <div className="flex flex-col justify-center">
                            <h2 className="text-2xl font-bold mb-2">{product.name}</h2>
+                           <p className="text-2xl font-bold mb-2">{product.description}</p>
                            <p className="text-gray-700 mb-1">{product.price} RSD</p>
                            <p className="text-gray-500 mb-3">Count: {product.count}</p>
                            <Button label="Add to cart" />

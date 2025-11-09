@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import Button from '../components/button';
 import Input from '../components/input';
 import Textarea from '../components/textarea';
 import Select from '../components/select';
+import { CartContext } from '../context/cartContext';
 export default function Cart() {
+   const { cart, totalQuantity } = useContext(CartContext)
    let pickupOptions = [
       { value: 'Makedonska - Trg Politika 3' },
       { value: 'Novi Beograd - Bulevar Zorana Đinđića 106a' },
@@ -15,7 +17,11 @@ export default function Cart() {
       <div>
 
          <div>
+            <p>{totalQuantity}</p>
             <h1>Delivery Details</h1>
+            <p> {cart.map((i, index) => (
+               <div key={index}>{i.name}</div>
+            ))}</p>
             <h3>Customer Name</h3>
             <h3>Phone Number</h3>
             <h3>Email Address</h3>
