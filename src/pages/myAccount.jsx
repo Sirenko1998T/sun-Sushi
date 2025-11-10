@@ -6,21 +6,49 @@ import confirm from '../assets/svgicons/confirm-green.svg';
 import trash from '../assets/svgicons/trash-black.svg';
 export default function MyAccount() {
    return (<>
-      <h1>My Account</h1>
-      <h3>Username</h3>
-      <div><p></p><Button img={edit} />
+      <div className="max-w-4xl mx-auto px-4 py-8">
+         <h1 className="text-3xl font-bold text-gray-800 mb-8">My Account</h1>
+
+         <div className="bg-white rounded-xl shadow-md p-6 space-y-6">
+            <div className="flex items-center justify-between border-b border-gray-200 pb-4">
+               <h3 className="text-lg font-semibold text-gray-700">Username</h3>
+               <div className="flex items-center space-x-2">
+                  <p className="text-gray-600">JohnDoe</p>
+                  <Button img={edit} className="bg-gray-100 hover:bg-gray-200 p-2 rounded-lg" />
+               </div>
+            </div>
+
+            <div className="flex items-center justify-between border-b border-gray-200 pb-4">
+               <h3 className="text-lg font-semibold text-gray-700">Email</h3>
+               <p className="text-gray-600">john.doe@example.com</p>
+            </div>
+
+            <div className="flex items-center justify-between border-b border-gray-200 pb-4">
+               <h3 className="text-lg font-semibold text-gray-700">Phone Number</h3>
+               <p className="text-gray-600">+381 11 123 4567</p>
+            </div>
+
+            <div className="border-b border-gray-200 pb-4">
+               <h3 className="text-lg font-semibold text-gray-700 mb-3">Delivery Address</h3>
+               <div className="flex space-x-2">
+                  <Input type="text" placeholder="Enter delivery address" className="flex-1" />
+                  <Button label='+' className="bg-blue-600 hover:bg-blue-700 text-white px-4" />
+               </div>
+            </div>
+
+            <div className="border-b border-gray-200 pb-4">
+               <h3 className="text-lg font-semibold text-gray-700 mb-2">Loyalty Program</h3>
+               <p className="text-gray-600">You have 150 loyalty points</p>
+            </div>
+
+            <div>
+               <h2 className="text-2xl font-bold text-gray-800 mb-4">Your Orders</h2>
+               <div className="bg-gray-50 rounded-lg p-8 text-center">
+                  <p className="text-gray-500 text-lg">You have no orders</p>
+               </div>
+            </div>
+         </div>
       </div>
-      <div> <input type='text' />/<Button img={confirm} />
-      </div>
-      <h3>Email</h3>
-      <p></p>
-      <h3>Phone Number</h3>
-      <p></p>
-      <h3>Delivery Address</h3>
-      <div> <input type="text" /> <Button label='+' /></div>
-      <h3>Loyalty Program</h3>
-      <h2>Your Orders</h2>
-      <p>You have no orders</p>
    </>);
 
 }

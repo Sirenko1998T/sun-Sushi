@@ -5,7 +5,8 @@ export const CartProvider = ({ children }) => {
 
    let [cart, setCart] = useState([]);
    let [quantity, setQuantity] = useState({});
-   let totalQuantity = Object.values(quantity).reduce((acc, i) => acc + i, 0)
+   let totalQuantity = Object.values(quantity).reduce((acc, i) => acc + i, 0);
+
    let increaseQuantity = (id) => {
       setQuantity(prev => ({
          ...prev,
