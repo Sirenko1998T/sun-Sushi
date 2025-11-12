@@ -1,9 +1,9 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useContext } from "react";
 import insatgramIcon from '../assets/svgicons/insta.svg'
 import tiktok from '../assets/svgicons/tiktok.svg'
 import linkedinIcon from '../assets/svgicons/linkedin.svg'
 import Button from "./button";
-
+import { AppContext } from "../context/appContext";
 import tweetIcon from '../assets/svgicons/tweet.svg'
 import send from '../assets/svgicons/paper-plane-white.svg'
 import BurgerLink from "./burger-link";
@@ -11,23 +11,8 @@ import Input from "./input";
 
 export default function BurgerMenu() {
    const [isOpen, setIsOpen] = useState(false);
-   const [email, setEmail] = useState("");
-   const [sendEmail, setSendEmail] = useState(false);
-
-   const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
+   const { email, setEmail, sendEmail, setSendEmail, isValidEmail, sendEmailSuccs } = useContext(AppContext)
    let menuRef = useRef(null);
-   const sendEmailSuccs = () => {
-      if (isValidEmail(email)) {
-         setSendEmail(true);
-         setEmail('');
-      } else {
-         alert("Please enter a valid email");
-         setSendEmail(false);
-         setEmail('');
-      }
-   }
-
    let outClick = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
          setIsOpen(false);

@@ -14,11 +14,25 @@ export const CartProvider = ({ children }) => {
       }))
    }
    let reduceQuantity = (id) => {
-      setQuantity(prev => ({
-         ...prev,
-         [id]: (prev[id] || 0) - 1
-      }))
-   }
+      setQuantity(prev => {
+         const newValue = (prev[id] || 0) - 1;
+
+
+         if (newValue <= 0) {
+            setCart(prevCart => prevCart.filter(item => item.id !== id));
+
+            const updated = { ...prev };
+            delete updated[id];
+            return updated;
+         }
+
+         return {
+            ...prev,
+            [id]: newValue
+         };
+      });
+   };
+
    let addToCart = (productId, products) => {
       setCart(prev => {
          let item = products.find((i) => i.id === productId)

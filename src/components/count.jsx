@@ -3,10 +3,10 @@ import { useState } from "react"
 export default function Count({ value = 1, reduce, increase }) {
 
    return (
-      <div className="flex items-center justify-center space-x-4 bg-white rounded-lg border border-gray-200 p-3 w-fit">
-         <Button label='-' onClick={reduce} className="w-10 h-10 flex items-center justify-center bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-full" />
-         <p className="text-xl font-semibold text-gray-800 min-w-8 text-center">{value}</p>
-         <Button label='+' onClick={increase} className="w-10 h-10 flex items-center justify-center bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-full" />
+      <div className="flex bg-black absolute bottom-[-37%] left-[10%] text-white   rounded-full font-bold items-center justify-center    ">
+         <Button label='-' onClick={reduce} className="w-8 h-8 flex items-center justify-center  text-white   " />
+         <p className="text-sm font-semibold text-white min-w-5 text-center">{value}</p>
+         <Button label='+' onClick={increase} className="w-8 h-8 flex items-center justify-center  text-white " />
       </div>
    )
 }
