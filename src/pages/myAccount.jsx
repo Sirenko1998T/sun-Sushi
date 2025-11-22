@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useContext } from "react";
 import Button from '../components/button';
 import Input from '../components/input';
 import edit from '../assets/svgicons/edit-black.svg';
 import confirm from '../assets/svgicons/confirm-green.svg';
 import trash from '../assets/svgicons/trash-black.svg';
+
+import { UserContext } from "../context/userContext.jsx";
+
+
+
+
+
 export default function MyAccount() {
+   const { email, password, setEmail, setPassword, user, setUser, userName, setUserName, userPhone, setUserPhone } = useContext(UserContext);
+
    return (<>
       <div className="max-w-4xl mx-auto px-4 py-8">
          <h1 className="text-3xl font-bold text-gray-800 mb-8">My Account</h1>
@@ -13,19 +22,19 @@ export default function MyAccount() {
             <div className="flex items-center justify-between border-b border-gray-200 pb-4">
                <h3 className="text-lg font-semibold text-gray-700">Username</h3>
                <div className="flex items-center space-x-2">
-                  <p className="text-gray-600">JohnDoe</p>
+                  <p className="text-gray-600"> {userName}</p>
                   <Button img={edit} className="bg-gray-100 hover:bg-gray-200 p-2 rounded-lg" />
                </div>
             </div>
 
             <div className="flex items-center justify-between border-b border-gray-200 pb-4">
                <h3 className="text-lg font-semibold text-gray-700">Email</h3>
-               <p className="text-gray-600">john.doe@example.com</p>
+               <p className="text-gray-700">{email}</p>
             </div>
 
             <div className="flex items-center justify-between border-b border-gray-200 pb-4">
                <h3 className="text-lg font-semibold text-gray-700">Phone Number</h3>
-               <p className="text-gray-600">+381 11 123 4567</p>
+               <p className="text-gray-600"> {userPhone}</p>
             </div>
 
             <div className="border-b border-gray-200 pb-4">

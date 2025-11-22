@@ -8,9 +8,12 @@ export default function ProductCard({
    products = [],
    homePage = false,
    menuPage = false,
+   cartPage = false,
    detaledView = false,
    cardSlider = false,
+
 }) {
+
    const [hovered, setHovered] = useState(null);
    const navigate = useNavigate();
    const { addToCart, quantity, increaseQuantity, reduceQuantity, setCart } = useContext(CartContext);
@@ -18,11 +21,50 @@ export default function ProductCard({
    if (cardSlider || homePage) {
       return (
          <>
+
             {products.filter(p => p && p.id).map((product, index) => (
                <div
                   key={product.id || index}
                   className="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 w-full"
                >
+                  {cartPage && (
+                     <div className='f'>
+                        <div>
+                           <img
+                              src={product.img}
+                              alt={product.name}
+                              className='   '
+                           />
+                        </div>
+
+                        <div className="text-black">
+                           <h2 className=" ">{product.name}</h2>
+
+                           <p className=" ">{product.description}</p>
+
+                           <p className=" ">
+                              {product.price} RSD
+                           </p>
+                           <p className=" ">Count: {product.count}</p>
+
+
+                           <Count
+                              className=" "
+                              value={quantity[product.id]}
+                              reduce={(e) => {
+                                 e?.stopPropagation();
+                                 reduceQuantity(product.id);
+                              }}
+                              increase={(e) => {
+                                 e?.stopPropagation();
+                                 increaseQuantity(product.id);
+                              }}
+                           />
+
+                        </div>
+                     </div>
+
+                  )}
                   {homePage && (
                      <div
                         className="p-4 text-center cursor-pointer "
@@ -68,6 +110,7 @@ export default function ProductCard({
          </>
       );
    }
+
 
    return (
       <div className={`grid gap-6 ${detaledView
@@ -147,25 +190,44 @@ export default function ProductCard({
                   )}
 
                   {detaledView && (
-                     <div className="p-6 flex flex-col lg:flex-row gap-8">
+
+                     <div className=' p-6 flex flex-col lg:flex-row gap-8 '>
                         <img
                            src={product.img}
                            alt={product.name}
-                           className="w-full lg:w-1/2 h-64 lg:h-96 object-cover rounded-xl"
+                           className='w-full lg:w-1/2 h-64 lg:h-96 object-cover rounded-xl  '
                         />
                         <div className="flex flex-col justify-center w-full lg:w-1/2">
                            <h2 className="text-3xl font-bold mb-4">{product.name}</h2>
+
                            <p className="text-xl text-gray-700 mb-4">{product.description}</p>
+
                            <p className="text-2xl font-bold text-gray-800 mb-2">
                               {product.price} RSD
                            </p>
                            <p className="text-gray-500 mb-6">Count: {product.count}</p>
 
-                           {isItemInCart && (
+                           {isItemInCart ? (
                               <Count
+                                 className="absolute top-0"
                                  value={quantity[product.id]}
-                                 reduce={() => reduceQuantity(product.id)}
-                                 increase={() => increaseQuantity(product.id)}
+                                 reduce={(e) => {
+                                    e?.stopPropagation();
+                                    reduceQuantity(product.id);
+                                 }}
+                                 increase={(e) => {
+                                    e?.stopPropagation();
+                                    increaseQuantity(product.id);
+                                 }}
+                              />
+                           ) : (
+                              <Button
+                                 onClick={(e) => {
+                                    e.stopPropagation();
+                                    addToCart(product.id, products);
+                                 }}
+                                 label="Add to cart"
+                                 className="bg-black   left-[10%] bottom-[-50%] text-white px-1 py-1 rounded-full font-bold"
                               />
                            )}
                         </div>
@@ -175,5 +237,6 @@ export default function ProductCard({
             );
          })}
       </div>
+
    );
 }

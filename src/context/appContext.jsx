@@ -1,10 +1,15 @@
 import {
    createContext, useState, useRef
 } from "react";
+
+
+
+
+
 export const AppContext = createContext();
 export const AppProvider = ({ children }) => {
-   const [email, setEmail] = useState("");
-
+   const [showModalCart, setShowModalCart] = useState(false);
+   const [showModalAcc, setShowModalCAcc] = useState(false)
    let closeTerms = () => {
       setTermsOfUse(false);
    }
@@ -12,7 +17,7 @@ export const AppProvider = ({ children }) => {
       setPrivacyPolicy(false);
    }
 
-   const [sendEmail, setSendEmail] = useState(false);
+
    const summerMenu = useRef(null);
    const sushiBoxes = useRef(null);
 
@@ -40,21 +45,9 @@ export const AppProvider = ({ children }) => {
    const beer = useRef(null);
    const wine = useRef(null);
 
-   const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
 
-   const sendEmailSuccs = () => {
-      if (isValidEmail(email)) {
-         setSendEmail(true);
-         setEmail('');
-      } else {
-         alert("Please enter a valid email");
-         setSendEmail(false);
-         setEmail('');
-      }
-   }
-
-   let value = { water, beer, soda, juice, freshJuice, wine, desserts, moonBistro, sideDish, sideSalad, email, hotDish, noodles, tartar, soup, salad, setEmail, sauces, maki, sashimi, sendEmail, setSendEmail, isValidEmail, sendEmailSuccs, summerMenu, californiaRolls, sushiBoxes, nigiri, signatureRolls };
+   let value = { water, showModalCart, setShowModalCart, showModalAcc, setShowModalCAcc, beer, soda, juice, freshJuice, wine, desserts, moonBistro, sideDish, sideSalad, hotDish, noodles, tartar, soup, salad, sauces, maki, sashimi, summerMenu, californiaRolls, sushiBoxes, nigiri, signatureRolls };
 
    return (
       <AppContext.Provider value={value}>

@@ -1,0 +1,28 @@
+ .marquee-container {
+    overflow: hidden;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: relative;
+ }
+
+ .marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 20s linear infinite;
+
+ }
+
+ .marquee span {
+    padding-right: 50px;
+ }
+
+ @keyframes marquee {
+    0% {
+       transform: translateX(0%);
+    }
+
+    100% {
+       transform: translateX(-50%);
+    }
+ }

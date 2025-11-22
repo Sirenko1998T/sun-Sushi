@@ -19,13 +19,13 @@ import bookOpen from '../assets/svgicons/book-open.svg'
 import restaurants2 from '../assets/img/moon_nbg.webp'
 import aboutImg1 from '../assets/img/aboutus1.jpg'
 import aboutImg2 from '../assets/img/aboutus2.jpg'
-
+import ProductCardSlider1 from "../components/product-card-slider1";
+import ProductCardSlider2 from "../components/product-card-slider2";
 import AboutUsBlock from "../components/about-us-block";
 import category from '../files/category.json'
 import { ProductsContext } from "../context/productContext";
 
 import InfoBlock from "../components/info-block";
-import ProductCard from "../components/product-card";
 import Button from "../components/button";
 
 export default function Home() {
@@ -38,24 +38,19 @@ export default function Home() {
    let select1 = products.filter(product => selection1.includes(product.name));
    let select2 = products.filter(product => selection2.includes(product.name));
    let selectSlide1 = select1.map(product => (
-      <ProductCard
+      <ProductCardSlider1
          key={product.id}
          products={[product]}
-         homePage={true}
-         menuPage={false}
-         detaledView={false}
-         cardSlider={false}
+
+
       />
    ));
 
    let selectSlide2 = select2.map(product => (
-      <ProductCard
+      <ProductCardSlider2
          key={product.id}
          products={[product]}
-         homePage={false}
-         menuPage={false}
-         detaledView={false}
-         cardSlider={true}
+
       />
    ));
 
@@ -64,7 +59,7 @@ export default function Home() {
 
 
    return (<>
-      <div className="space-y-16 py-8">
+      <div className="space-y-16 ">
          <section className="relative">
 
 

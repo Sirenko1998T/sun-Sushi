@@ -4,10 +4,12 @@ export default function Button({ onClick, label, img, className = "", imgClassNa
    return (
       <button
          onClick={onClick}
-         className={className}
+         className={`${className} cursor-pointer`}
+
+
       >
          {label && <span className="mx-2">{label}</span>}
          {img && <img src={img} alt={label} className={imgClassName} />}
-      </button>
+      </button >
    );
 }

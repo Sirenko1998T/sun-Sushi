@@ -1,20 +1,39 @@
-import React, { useContext } from "react";
-import { Link, Outlet } from "react-router-dom";
+import React, { useContext, Suspense } from "react";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import Button from "./button";
 import BurgerMenu from "./burger-menu";
 import Footer from "./footer.jsx";
 import logo from "../assets/svgicons/logo.svg";
-import cart from "../assets/svgicons/cart-shopping-fast.svg";
-import user from "../assets/svgicons/circle-user.svg";
+import cartImg from "../assets/svgicons/cart-shopping-fast.svg";
+import userImg from "../assets/svgicons/circle-user.svg";
 import menu from "../assets/svgicons/our-menu.svg";
 import { CartContext } from "../context/cartContext.jsx";
-
+import { UserContext } from "../context/userContext.jsx";
+import { AppContext } from "../context/appContext.jsx";
+const Modal = React.lazy(() => import("./modal.jsx"))
+import '../styles/marque.css';
 export default function Layout() {
+   const navigate = useNavigate();
    const { totalQuantity } = useContext(CartContext);
+   const { user } = useContext(UserContext);
+   const { showModalCart, setShowModalCart, showModalAcc, setShowModalCAcc } = useContext(AppContext)
+
+
 
    return (
       <>
+
+         {showModalCart && <Suspense fallback={<div>LOADING...</div>} ><Modal text='Log in to view your car' /></Suspense>}
+         {showModalAcc && <Suspense fallback={<div>LOADING...</div>} > <Modal text='Log in to access your account' /> </Suspense>}
+         <div className="marquee-container">
+            <div className="marquee">
+               <span>30% OFF on all orders! Use code SUN30 at checkout! &nbsp; • &nbsp; Free delivery for orders over $50! &nbsp; • &nbsp; New menu items added weekly! &nbsp; • &nbsp; Join our loyalty program and earn rewards! &nbsp; • &nbsp; Follow us on social media for exclusive deals! &nbsp; • &nbsp; Catering services available for your events! &nbsp; • &nbsp; Download our app for easy ordering! &nbsp; • &nbsp; Fresh ingredients sourced locally! &nbsp; • &nbsp; Vegan and gluten-free options available! &nbsp; • &nbsp; Thank you for choosing SUN Sushi!</span>
+               <span>30% OFF on all orders! Use code SUN30 at checkout! &nbsp; • &nbsp; Free delivery for orders over $50! &nbsp; • &nbsp; New menu items added weekly! &nbsp; • &nbsp; Join our loyalty program and earn rewards! &nbsp; • &nbsp; Follow us on social media for exclusive deals! &nbsp; • &nbsp; Catering services available for your events! &nbsp; • &nbsp; Download our app for easy ordering! &nbsp; • &nbsp; Fresh ingredients sourced locally! &nbsp; • &nbsp; Vegan and gluten-free options available! &nbsp; • &nbsp; Thank you for choosing SUN Sushi!</span>
+
+            </div>
+         </div>
          <header className="relative flex items-center justify-between p-4 sticky top-0 z-50 bg-white shadow-md">
+
 
             <div className="flex items-center space-x-4">
                <Link to="/" className="flex items-center">
@@ -42,16 +61,36 @@ export default function Layout() {
             </div> </Link>
 
             <div className="flex items-center space-x-4">
-               <Link to="/cart" className="relative">
-                  <Button img={cart} className="hover:scale-110 transition-transform" />
+               <div className="relative">
+                  <Button img={cartImg} onClick={() => {
+                     if (user) {
+                        navigate("/cart")
+                     }
+                     else {
+                        navigate("/login");
+                        setShowModalCart(true);
+                     }
+
+                  }} className=" hover:scale-110 transition-transform" />
+
                   <span className="absolute -top-2 -right-2 bg-black text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
                      {totalQuantity}
                   </span>
-               </Link>
 
-               <Link to="/myAccount" className="hidden md:flex">
-                  <Button img={user} className="hover:scale-110 transition-transform" />
-               </Link>
+               </div>
+
+
+               <Button img={userImg} className="hover:scale-110 transition-transform" onClick={() => {
+                  if (user) {
+                     navigate("/myAccount")
+                  }
+                  else {
+                     navigate("/login");
+                     setShowModalCAcc(true);
+                  }
+
+               }} />
+
 
                <BurgerMenu />
             </div>

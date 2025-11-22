@@ -5,6 +5,7 @@ import Cart from "./cart";
 import Menu from "./menu";
 import Login from "./login";
 import MyAccount from "./myAccount";
+import Register from "./register";
 import ProductCard from "../components/product-card";
 import { Routes, Route } from 'react-router-dom';
 export default function Main() {
@@ -16,6 +17,7 @@ export default function Main() {
 
             <Route index element={<Home />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/register' element={<Register />} />
             <Route path='/menu/:id' element={<Menu />} />
             <Route path='/menu' element={<Menu />} />
             <Route path='/login' element={<Login />} />
